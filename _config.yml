@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 阿熊不凶
+title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: Abear
-language: zh-CN
+author: John Doe
+language: en
 timezone: ''
 
 # URL
@@ -101,4 +101,6 @@ theme: anzhiyu
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+ type: git
+ repo: https://github.com/Abear6666/Abear6666.github.io
+ branch: main
