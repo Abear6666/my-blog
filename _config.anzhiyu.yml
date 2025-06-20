@@ -71,18 +71,18 @@ social:
 
 # 作者卡片 状态
 author_status:
-  enable: false
+  enable: true
   # 可以是任何图片，建议放表情包或者emoji图片，效果都很好，[表情包速查](https://emotion.xiaokang.me/)
   statusImg: "https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png"
   skills:
-    # - 🤖️ 数码科技爱好者
-    # - 🔍 分享与热心帮助
-    # - 🏠 智能家居小能手
-    # - 🔨 设计开发一条龙
-    # - 🤝 专修交互与设计
-    # - 🏃 脚踏实地行动派
-    # - 🧱 团队小组发动机
-    # - 💢 壮汉人狠话不多
+    - 🤖️ 数码科技爱好者
+    - 🔍 分享与热心帮助
+    - 🏠 智能家居小能手
+    - 🔨 设计开发一条龙
+    - 🤝 专修交互与设计
+    - 🏃 脚踏实地行动派
+    - 🧱 团队小组发动机
+    - 💢 壮汉人狠话不多
 
 # search (搜索)
 # see https://blog.anheyu.com/posts/c27d.html#搜索系统
@@ -140,7 +140,7 @@ favicon: /favicon.ico
 
 # Avatar (头像)
 avatar:
-  img: https://bu.dusays.com/2023/04/27/64496e511b09c.jpg
+  img: https://cdn.jsdelivr.net/gh/Abear6666/image@main/images/my.jpg
   effect: false
 
 # Disable all banner image
@@ -162,7 +162,7 @@ cover:
   position: left
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover:
-    # - /img/default_cover.jpg
+     - /img/default_cover.jpg
 
 # Replace Broken Images (替换无法显示的图片)
 error_img:
@@ -234,7 +234,7 @@ post_copyright:
   enable: true
   decode: false
   author_href:
-  location: 长沙
+  location: 深圳
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
   avatarSinks: false # hover时头像下沉
@@ -282,7 +282,7 @@ photofigcaption: false
 # 3: 只有下一篇，并且只在文章滚动到评论区时显示下一篇文章(旧文章)
 # 4: 只有下一篇，并且只在文章滚动到评论区时显示下一篇文章(旧文章) 显示图片cover
 # false: disable pagination
-post_pagination: 2
+post_pagination: 3
 
 # Displays outdated notice for a post (文章过期提醒)
 noticeOutdate:
@@ -314,7 +314,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Valine/Waline/Twikoo/Artalk
-  use: # Twikoo/Waline
+  use:  Waline
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -349,9 +349,9 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: # Waline server address url
+  serverURL: https://waline.bear321.xyz/ # Waline server address url
   bg: # Waline background
-  pageview: false
+  pageview: true
   meta_css: false # 是否引入 waline-meta.css ,以便显示 meta图标
   imageUploader: true # 配置为 > 换行后可自定义图片上传逻辑，示例: https://waline.js.org/cookbook/customize/upload-image.html#案例
   # 以下为可选配置，后续若有新增/修改配置参数可在此自行添加/修改
@@ -427,11 +427,11 @@ crisp:
 footer:
   owner:
     enable: true
-    since: 2020
+    since: 2025
   custom_text:
   runtime:
-    enable: false
-    launch_time: 04/01/2021 00:00:00 # 网站上线时间
+    enable: true
+    launch_time: 06/19/2025 00:00:00 # 网站上线时间
     work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
     work_description: 距离月入25k也就还差一个大佬带我~
     offduty_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
@@ -439,7 +439,7 @@ footer:
   # 徽标部分配置项 https://shields.io/
   # https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
   bdageitem:
-    enable: false
+    enable: true
     list:
       - link: https://hexo.io/ #徽标指向网站链接
         shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg #徽标API
@@ -457,70 +457,70 @@ footer:
       #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
       #   message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
   socialBar:
-    enable: false
+    enable: true
     centerImg:
     left:
-      # - title: email
-      #   link: mailto:anzhiyu-c@qq.com
-      #   icon: anzhiyu-icon-envelope
-      # - title: 微博
-      #   link: https://weibo.com/u/6378063631
-      #   icon: anzhiyu-icon-weibo
-      # - title: facebook
-      #   link: https://www.facebook.com/profile.php?id=100092208016287&sk=about
-      #   icon: anzhiyu-icon-facebook1
-      # - title: RSS
-      #   link: atom.xml
-      #   icon: anzhiyu-icon-rss
+      - title: email
+        link: mailto:anzhiyu-c@qq.com
+        icon: anzhiyu-icon-envelope
+      - title: 微博
+        link: https://weibo.com/u/6378063631
+        icon: anzhiyu-icon-weibo
+      - title: facebook
+        link: https://www.facebook.com/profile.php?id=100092208016287&sk=about
+        icon: anzhiyu-icon-facebook1
+      - title: RSS
+        link: atom.xml
+        icon: anzhiyu-icon-rss
     right:
-      # - title: Github
-      #   link: https://github.com/anzhiyu-c
-      #   icon: anzhiyu-icon-github
-      # - title: Bilibili
-      #   link: https://space.bilibili.com/372204786
-      #   icon: anzhiyu-icon-bilibili
-      # - title: 抖音
-      #   link: https://v.douyin.com/DwCpMEy/
-      #   icon: anzhiyu-icon-tiktok
-      # - title: CC
-      #   link: /copyright
-      #   icon: anzhiyu-icon-copyright-line
+      - title: Github
+        link: https://github.com/anzhiyu-c
+        icon: anzhiyu-icon-github
+      - title: Bilibili
+        link: https://space.bilibili.com/372204786
+        icon: anzhiyu-icon-bilibili
+      - title: 抖音
+        link: https://v.douyin.com/DwCpMEy/
+        icon: anzhiyu-icon-tiktok
+      - title: CC
+        link: /copyright
+        icon: anzhiyu-icon-copyright-line
   list:
     enable: false
     randomFriends: 3
     project:
-      # - title: 服务
-      #   links:
-      #     - title: 51la统计
-      #       link: https://v6.51.la/
-      #     - title: 十年之约
-      #       link: https://www.foreverblog.cn/
-      #     - title: 开往
-      #       link: https://github.com/travellings-link/travellings
-      # - title: 主题
-      #   links:
-      #     - title: 文档
-      #       link: /docs/
-      #     - title: 源码
-      #       link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
-      #     - title: 更新日志
-      #       link: /update/
-      # - title: 导航
-      #   links:
-      #     - title: 即刻短文
-      #       link: /essay/
-      #     - title: 友链文章
-      #       link: /fcircle/
-      #     - title: 留言板
-      #       link: /comments/
-      # - title: 协议
-      #   links:
-      #     - title: 隐私协议
-      #       link: /privacy/
-      #     - title: Cookies
-      #       link: /cookies/
-      #     - title: 版权协议
-      #       link: /copyright/
+      - title: 服务
+        links:
+          - title: 51la统计
+            link: https://v6.51.la/
+          - title: 十年之约
+            link: https://www.foreverblog.cn/
+          - title: 开往
+            link: https://github.com/travellings-link/travellings
+      - title: 主题
+        links:
+          - title: 文档
+            link: /docs/
+          - title: 源码
+            link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+          - title: 更新日志
+            link: /update/
+      - title: 导航
+        links:
+          - title: 即刻短文
+            link: /essay/
+          - title: 友链文章
+            link: /fcircle/
+          - title: 留言板
+            link: /comments/
+      - title: 协议
+        links:
+          - title: 隐私协议
+            link: /privacy/
+          - title: Cookies
+            link: /cookies/
+          - title: 版权协议
+            link: /copyright/
   footerBar:
     enable: true
     authorLink: /
@@ -530,10 +530,10 @@ footer:
     linkList:
       - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
         text: 主题
-      # - link: https://image.anheyu.com
-      #   text: 图床
-      # - link: https://beian.miit.gov.cn/
-      #   text: 湘ICP备-xxxxxxx号
+      - link: https://image.anheyu.com
+        text: 图床
+      - link: https://beian.miit.gov.cn/
+        text: 湘ICP备-xxxxxxx号
     subTitle:
       enable: false
       # Typewriter Effect (打字效果)
@@ -553,7 +553,7 @@ footer:
       source: 1
       # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
       sub:
-        # - 生活明朗&#44; 万物可爱&#44; 人间值得&#44; 未来可期.
+         - 生活明朗&#44; 万物可爱&#44; 人间值得&#44; 未来可期.
 
 # Analysis
 # --------------------------------------
@@ -561,6 +561,16 @@ footer:
 # Baidu Analytics
 # https://tongji.baidu.com/web/welcome/login
 baidu_analytics:
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?885269c5007a87f618e14a1625419941";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+
+
+
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
@@ -730,7 +740,7 @@ ClickShowText:
 
 # Default display mode (网站默认的显示模式)
 # light (default) / dark
-display_mode: light
+display_mode: dark
 
 # Beautify (美化页面显示)
 beautify:
@@ -791,7 +801,7 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
-  avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg # 自定加载动画义头像
+  avatar: https://cdn.jsdelivr.net/gh/Abear6666/image@main/images/my.jpg # 自定加载动画义头像
 
 # aside (侧边栏)
 # --------------------------------------
@@ -860,7 +870,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 4/1/2021 00:00:00
+  publish_date: 6/15/2025 00:00:00
 
 # Console - Newest Comments
 newest_comments:
@@ -1054,17 +1064,17 @@ home_top:
   subTitle: 万物可爱。
   siteText: anheyu.com
   category:
-    - name: 前端
+    - name: 嵌入式开发
       path: /categories/前端开发/
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
       icon: anzhiyu-icon-dove
-    - name: 大学
+    - name: 硬件开发
       path: /categories/大学生涯/
       shadow: var(--anzhiyu-shadow-red)
       class: red
       icon: anzhiyu-icon-fire
-    - name: 生活
+    - name: 易语言脚本
       path: /categories/生活日常/
       shadow: var(--anzhiyu-shadow-green)
       class: green
@@ -1075,18 +1085,17 @@ home_top:
     swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css #swiper css依赖
     swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js #swiper js依赖
   banner:
-    tips: 新品主题
-    title: Theme-AnZhiYu
+    tips: 阿熊不凶
+    title: Abear
     image: https://bu.dusays.com/2023/05/13/645fa3cf90d70.webp
-    link: https://docs.anheyu.com/
+    link: https://bear321.xyz
 
 # 朋友圈配置
 friends_vue:
-  enable: false
-  vue_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.1/friends/index.4f887d95.js
-  apiurl: # 朋友圈后端地址
-  top_tips: 使用 友链朋友圈 订阅友链最新文章
-  top_background:
+  enable: true
+  vue_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.2/friends/index.f9a2b8d2.js
+  apiurl: https://friends.anheyu.com/ # 朋友圈后端地址
+  top_background: https://img02.anheyu.com/adminuploads/1/2022/08/21/630249e2df20f.jpg
 
 # 深色模式粒子效果canvas
 universe:
@@ -1108,7 +1117,7 @@ LA:
 
 # 标签卖萌
 diytitle:
-  enable: true
+  enable: false
   leaveTitle: w(ﾟДﾟ)w 不要走！再看看嘛！
   backTitle: ♪(^∇^*)欢迎肥来！
 
@@ -1156,30 +1165,30 @@ greetingBox:
   enable: false #开启后必须配置下面的list对应的时间段，不然会出现小白条
   default: 晚上好👋
   list:
-    # - greeting: 晚安😴
-    #   startTime: 0
-    #   endTime: 5
-    # - greeting: 早上好鸭👋, 祝你一天好心情！
-    #   startTime: 6
-    #   endTime: 9
-    # - greeting: 上午好👋, 状态很好，鼓励一下～
-    #   startTime: 10
-    #   endTime: 10
-    # - greeting: 11点多啦, 在坚持一下就吃饭啦～
-    #   startTime: 11
-    #   endTime: 11
-    # - greeting: 午安👋, 宝贝
-    #   startTime: 12
-    #   endTime: 14
-    # - greeting: 🌈充实的一天辛苦啦！
-    #   startTime: 14
-    #   endTime: 18
-    # - greeting: 19点喽, 奖励一顿丰盛的大餐吧🍔。
-    #   startTime: 19
-    #   endTime: 19
-    # - greeting: 晚上好👋, 在属于自己的时间好好放松😌~
-    #   startTime: 20
-    #   endTime: 24
+    - greeting: 晚安😴
+      startTime: 0
+      endTime: 5
+    - greeting: 早上好鸭👋, 祝你一天好心情！
+      startTime: 6
+      endTime: 9
+    - greeting: 上午好👋, 状态很好，鼓励一下～
+      startTime: 10
+      endTime: 10
+    - greeting: 11点多啦, 在坚持一下就吃饭啦～
+      startTime: 11
+      endTime: 11
+    - greeting: 午安👋, 宝贝
+      startTime: 12
+      endTime: 14
+    - greeting: 🌈充实的一天辛苦啦！
+      startTime: 14
+      endTime: 18
+    - greeting: 19点喽, 奖励一顿丰盛的大餐吧🍔。
+      startTime: 19
+      endTime: 19
+    - greeting: 晚上好👋, 在属于自己的时间好好放松😌~
+      startTime: 20
+      endTime: 24
 
 # 文章顶部ai摘要
 post_head_ai_description:

@@ -5,7 +5,7 @@
 # Site
 title: 阿熊不凶Blog
 subtitle: '个人技术博客，记录我的学习过程'
-description: '欢迎您'
+description: '这里是我的工作日记本和学习记录本，目前处于嵌入式软件工程师工作2年啦，主攻领域为嵌入式开发和易语言脚本开发，因此你将会在这看到大量关于我的工作学习笔记和教程希望你能在这里学习到有用的知识，可以的话可以收藏本网站😘。'
 keywords:
 author: Abear
 language: zh-CN
@@ -97,6 +97,38 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: anzhiyu
+
+# 追番插件
+# https://github.com/HCLonely/hexo-bilibili-bangumi
+bangumi: # 追番设置
+  enable: true
+  source: bili
+  path:
+  vmid: 372204786
+  title: "追番列表"
+  quote: "生命不息，追番不止！"
+  show: 1
+  lazyload: false
+  loading:
+  showMyComment: false
+  pagination: false
+  metaColor:
+  color:
+  webp:
+  progress:
+  extraOrder:
+  proxy:
+    host: "代理host"
+    port: "代理端口"
+  extra_options:
+    top_img: false
+    lazyload:
+      enable: false
+# APlayer
+# https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md
+aplayer:
+  meting: true
+  asset_inject: false
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
